@@ -13,7 +13,6 @@ activate:
 
 download_data:
 	@echo "Downloading data..."
-	wget https://gist.githubusercontent.com/khuyentran1401/a1abde0a7d27d31c7dd08f34a2c29d8f/raw/da2b0f2c9743e102b9dfa6cd75e94708d01640c9/Iris.csv -O data/raw/iris.csv
 
 setup: initialize_git install download_data
 
