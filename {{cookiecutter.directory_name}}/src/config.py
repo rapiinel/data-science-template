@@ -32,10 +32,11 @@ def must_be_non_negative(v: float) -> float:
 class Location(BaseModel):
     """Specify the locations of inputs and outputs"""
 
-    data_raw: str = "data/raw/iris.csv"
-    data_process: str = "data/processed/xy.pkl"
-    data_final: str = "data/final/predictions.pkl"
-    model: str = "models/svc.pkl"
+    folder_link: str = ""
+    data_raw: str = "data/raw/"
+    data_process: str = "data/processed/"
+    data_final: str = "data/final/"
+    model: str = "models/"
     input_notebook: str = "notebooks/analyze_results.ipynb"
     output_notebook: str = "notebooks/results.ipynb"
 
